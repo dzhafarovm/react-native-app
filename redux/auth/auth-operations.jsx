@@ -42,7 +42,6 @@ export const authSignInUser =
 
 export const authSignOutUser = () => async (dispatch, getState) => {
   await db.auth().signOut();
-
   dispatch(authSignOut());
 };
 
